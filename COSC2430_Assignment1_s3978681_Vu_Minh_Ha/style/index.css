@@ -1,0 +1,40 @@
+section {
+    display: flex;
+    gap: 80px;
+    justify-content: center;
+    background: url(../assets/images/pngimg.com\ -\ curtain_PNG54.png);
+    background-size: cover;
+    padding: 40px;
+}
+section img {
+    width: 100%;
+    height: 240px;
+}
+h1 {
+    text-align: center;
+    margin-top: 100px;
+    margin-bottom: 20px;
+}
+section div {
+    height: 290px;
+    width: 220px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border: solid purple;
+    box-shadow: 5px 5px 10px 5px rgb(158, 221, 179);
+    background: white;
+}
+section div p {
+    height: 40px;
+    text-align: center;
+}
+a {
+    text-decoration: none;
+}
+footer {
+    margin-top: 150px;
+}
+.book1 {
+    transform: translate(0, 20px);
+}
