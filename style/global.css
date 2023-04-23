@@ -41,8 +41,7 @@ footer ul {
     gap: 50px;
 }
 #bookstore-logo {
-    font-family: 'Rowdies', cursive;
-    font-size: 32px;
+    height: 50px;
 }
 nav ul li {
     position: relative;

@@ -42,6 +42,7 @@ button {
     height: 35px;
     width: 80px;
     border-radius: 12px;
+    cursor: pointer;
 }
 .button-container {
     display: flex;
@@ -55,7 +56,7 @@ fieldset div {
     margin-top: 20px;
 }
 body {
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url(../assets/images/contact-bg2.jpeg);
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url(../assets/images/contact-bg.jpeg);
     background-size: cover;
     background-blend-mode: darken;
 }
