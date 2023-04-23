@@ -1,45 +1,102 @@
+/* RMIT University Vietnam
+  Course: COSC2430 Web Programming
+  Semester: 2023A
+  Assessment: Assignment 1
+  Author: Vu Minh Ha
+  ID: s3978681
+  Acknowledgement: Acknowledge the resources that you use here. */
+
 * {
     padding: 0;
     margin: 0;
+    /* font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; */
+    font-family: Arial, Helvetica, sans-serif
 }
 body {
     font-size: 100%;
-    
 }
-#bookstore-logo {
-    width: 100px;
-    border-radius: 12% 50%;
-    box-shadow: 
-    0 0 50px #fff,
-    -5px 0 50px #f0f,
-    5px 0 50px #0ff;
-    box-shadow: 
-    0 0 50px #fff,
-    5px 0 20px #0ff,
-    -5px 0 20px #f0f;
-}
-header, footer {
-    background: url(../assets/images/nav-background2.jpeg);
-    background-size: cover;
+header, footer ul{
+    background: rgb(191, 170, 142);
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 5px 30px;
+    height: 70px;
+    padding: 0 30px;
 }
-header {
+nav {
     font-size: 18px;
 } 
-footer {
+footer ul{
     justify-content: flex-end;
 }
-nav a {
-    color: white;
+header a,
+footer a {
     text-decoration: none;
-    /*this is to be updated later*/
+    color: black;
 }
-nav ul {
+nav ul,
+footer ul {
     list-style: none;
     display: flex;
-    padding: 20px;
-    gap: 45px;
+    gap: 50px;
+}
+#bookstore-logo {
+    font-family: 'Rowdies', cursive;
+    font-size: 32px;
+}
+nav ul li {
+    position: relative;
+}
+nav ul li::after {
+    content: '';
+    height: 3px;
+    width: 0;
+    background: #E4E9BE;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    transition: 0.5s;
+}
+nav ul li:hover::after {
+    width: 100%;
+}
+#burger-menu {
+    width: 40px;
+    height: 40px;
+    display: none;
+    position: relative;
+}
+@media screen and (max-width: 960px) {
+    nav {
+        display: flex;
+        flex-direction: column;
+        height: max-content;
+        position: absolute;
+        top: 0;
+        right: 0;
+        z-index: 1;
+    }
+    nav ul {
+        display: flex;
+        flex-direction: column;
+        padding: 8px 24px;
+        margin: 70px;
+        gap: 25px;
+        background: #fff;
+        width: 100%;
+        padding: 15px 24px 24px 24px;
+        border: solid #8b8a8a;
+    }
+    nav {
+        display: none;
+    }
+    #burger-menu {
+        display: block;
+    }
+    #burger-menu:hover+nav{
+        display: block;
+    }
+    nav:hover {
+        display: block;
+    }
 }

@@ -1,0 +1,147 @@
+<!-- RMIT University Vietnam
+  Course: COSC2430 Web Programming
+  Semester: 2023A
+  Assessment: Assignment 1
+  Author: Vu Minh Ha
+  ID: s3978681
+  Acknowledgement: Acknowledge the resources that you use here. -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../style/global.css" />
+    <link rel="stylesheet" href="../style/contact.css" />
+    <link rel="icon" href="../assets/images/bookstore-logo.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rowdies:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <title>Contact</title>
+  </head>
+
+  <body>
+    <header>
+      <a href="../index.html">
+        <h1 id="bookstore-logo">Minha Store</h1>
+      </a>
+      <img
+        id="burger-menu"
+        src="../assets/images/burger-menu.png"
+        alt="burger-menu-icon"
+      />
+      <nav>
+        <ul>
+          <li>
+            <a href="../index.html"> Home </a>
+          </li>
+          <li>
+            <a href="./children.html"> Children's Books </a>
+          </li>
+          <li>
+            <a href="./non-fiction.html"> Non-Fiction </a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <h1>Contact Us</h1>
+      <div class="main-body">
+        <div class="form-container">
+          <form action="processing.php" method="post">
+            <div>
+              <label for="contact-purpose"
+                >Contact purpose<span class="asterisk">*</span>
+              </label>
+              <select id="contact-purpose" name="contact-purpose" required>
+                <option value="">Please choose an option</option>
+                <option value="sell">I want to sell books</option>
+                <option value="buy">I want to buy books</option>
+              </select>
+            </div>
+            <fieldset>
+              <div>
+                <label for="username"
+                  >Name<span class="asterisk">*</span></label
+                >
+                <input id="username" name="username" type="text" required />
+              </div>
+              <div>
+                <label for="email">Email<span class="asterisk">*</span></label>
+                <input id="email" name="email" type="email" required />
+              </div>
+              <div>
+                <label for="phone"
+                  >Phone number<span class="asterisk">*</span></label
+                >
+                <input id="phone" name="phone" type="tel" required />
+              </div>
+            </fieldset>
+            <div class="choice-box">
+              <label>Contact preferences<span class="asterisk">*</span></label>
+              <input
+                type="checkbox"
+                name="contact-preferences"
+                value="email"
+              />By email
+              <input
+                type="checkbox"
+                name="contact-preferences"
+                value="phone"
+              />By phone
+            </div>
+            <div class="choice-box">
+              <label
+                >Receive weekly newsletter
+                <span class="asterisk">*</span></label
+              >
+              <input type="radio" name="newsletter" value="yes" checked />Yes
+              <input type="radio" name="newsletter" value="no" />No
+            </div>
+            <div>
+              <label for="extra-note">Extra notes:</label>
+              <textarea
+                id="extra-note"
+                name="extra-note"
+                placeholder="I have a question about ..."
+                cols="30"
+                rows="3"
+              ></textarea>
+            </div>
+            <div class="button-container">
+              <button id="submit-button" type="submit" name="submit">
+                Submit
+              </button>
+              <button type="reset" name="reset">Reset</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </main>
+  </body>
+
+  <footer>
+    <ul>
+      <li>
+        <a href="#"> About Us </a>
+      </li>
+      <li>
+        <a href="#"> Privacy Policy </a>
+      </li>
+      <li>
+        <a href="#"> Terms </a>
+      </li>
+      <li>
+        <a href="#"> Copyright </a>
+      </li>
+      <li>
+        <a href="./contact.html"> Contact Us </a>
+      </li>
+    </ul>
+  </footer>
+</html>

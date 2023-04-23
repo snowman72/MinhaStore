@@ -1,93 +1,224 @@
+<!-- RMIT University Vietnam
+  Course: COSC2430 Web Programming
+  Semester: 2023A
+  Assessment: Assignment 1
+  Author: Vu Minh Ha
+  ID: s3978681
+  Acknowledgement: 
+<a href="https://www.flaticon.com/free-icons/scroll" title="scroll icons">Scroll icons created by fulmal - Flaticon</a>
+-->
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style/index.css" />
     <link rel="stylesheet" href="style/global.css" />
+    <link rel="stylesheet" href="style/index.css" />
     <link rel="icon" href="./assets/images/bookstore-logo.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rowdies:wght@300&display=swap"
+      rel="stylesheet"
+    />
     <title>Minha Store</title>
   </head>
+
   <body>
     <header>
-      <img id="bookstore-logo" src="./assets/images/bookstore-logo.png" />
+      <a href="index.html">
+        <h1 id="bookstore-logo">Minha Store</h1>
+      </a>
+      <img
+        id="burger-menu"
+        src="./assets/images/burger-menu.png"
+        alt="burger-menu-icon"
+      />
       <nav>
         <ul>
           <li>
             <a href="index.html"> Home </a>
           </li>
           <li>
-            <a href="#"> Children's Books </a>
+            <a href="./html/children.html"> Children's Books </a>
           </li>
           <li>
-            <a href="#"> Non-Fiction </a>
+            <a href="./html/non-fiction.html"> Non-Fiction </a>
           </li>
         </ul>
       </nav>
     </header>
+
     <main>
-      <h1>
-        <a href="#"> Children's Books </a>
-      </h1>
-      <section>
-        <div class="book1">
-          <img
-            src="https://d1b14unh5d6w7g.cloudfront.net/0064430170.01.S001.LXXXXXXX.jpg?Expires=1681571365&Signature=ICsspof~pbVtUtPZ0QCESzm9mNig9661fD2Yvo4tE8HnPXTGtAkuVufKrt4EEZfpgBOQ0LW3AS5q~rA3vasVUS3fOkOW89iqI9Lj99dZ9VWVjfQqZi-vysILtVBt7g3O3wjmFJgQ0cQA9lhtC0LsSS2wZvuQH7t1-hqYhtFM8A0_&Key-Pair-Id=APKAIUO27P366FGALUMQ"
-          />
-          <p>Goodnight Moon</p>
+      <section class="showcase">
+        <div class="left">
+          <div class="quote">
+            <p>
+              “The more that you read, the more things you will know. The more
+              that you learn, the more places you’ll go.”
+            </p>
+            <p>- Dr. Seuss</p>
+          </div>
+
+          <a href="#intro-heading">
+            <button>Explore Now</button>
+          </a>
         </div>
-        <div class="book2">
-          <img
-            src="https://m.media-amazon.com/images/S/aplus-media-library-service-media/20bc1f90-ad19-4381-af36-df8407bc473b.__CR0,0,300,300_PT0_SX300_V1___.jpg"
-          />
-          <p>Ricky, the Rock That Couldn't Roll</p>
-        </div>
-        <div class="book3">
-          <img src="https://m.media-amazon.com/images/I/91Kn2OQpwxL.jpg" />
-          <p>How Everything Works</p>
-        </div>
+        <img
+          src="https://www.verywellfamily.com/thmb/BnnfEkEY76ilfrqsu1p8w9Gjct8=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/Getty_girl_books_smiling_LARGE_JGI-Jamie-Grill-56a13e783df78cf77268bb18.jpg"
+          alt="a girl holding a book with a smile on her face"
+        />
       </section>
 
-      <h1>
-        <a href="#"> Non-Fiction </a>
+      <div class="container-fd">
+        <section class="fun-demonstration">
+          <div>
+            <p>
+              <span class="text-emphasize">Hover&nbsp;</span> over the tree
+              below ⬇️
+            </p>
+            <p class="hidden">
+              With every book that you read, you are raising your own tree of
+              wisdom 💧
+            </p>
+          </div>
+          <img
+            src="https://img.freepik.com/premium-vector/hand-drawn-tree-vector-isolated-illustration_379823-2515.jpg?w=2000"
+            alt="a tree"
+          />
+        </section>
+      </div>
+
+      <h1 id="intro-heading">Our Book Collections</h1>
+      <h1 id="children">
+        <a href="./html/children.html"> Children's Books </a>
       </h1>
       <section>
-        <div>
-          <img src="https://m.media-amazon.com/images/I/91m4owqTMsL.jpg" />
-          <p>Europe by Eurail 2023</p>
-        </div>
-        <div>
-          <img src="https://m.media-amazon.com/images/I/71nF0Ui0LzL.jpg" />
-          <p>From Crook to Cook</p>
-        </div>
-        <div>
-          <img src="https://m.media-amazon.com/images/I/91eA7MU1teL.jpg" />
-          <p>Assyria: The Rise and Fall of the World’s First Empire</p>
-        </div>
+        <a href="./html/children.html">
+          <div class="books">
+            <img
+              src="https://g.christianbook.com/dg/slideshow/f400/091818_2_ftc.jpg"
+              alt="Goodnight moon book cover"
+            />
+            <p>Goodnight Moon</p>
+          </div>
+        </a>
+
+        <a href="./html/children.html">
+          <div class="books">
+            <img
+              src="https://m.media-amazon.com/images/S/aplus-media-library-service-media/20bc1f90-ad19-4381-af36-df8407bc473b.__CR0,0,300,300_PT0_SX300_V1___.jpg"
+              alt="ricky, the rock that couldn't roll book cover"
+            />
+            <p>Ricky, the Rock That Couldn't Roll</p>
+          </div>
+        </a>
+
+        <a href="./html/children.html">
+          <div class="books">
+            <img
+              src="https://m.media-amazon.com/images/I/91Kn2OQpwxL.jpg"
+              alt="how everything works book cover"
+            />
+            <p>How Everything Works</p>
+          </div>
+        </a>
       </section>
-      <div>Some video here</div>
+
+      <h1 id="non-fiction">
+        <a href="./html/non-fiction.html"> Non-Fiction </a>
+      </h1>
+      <section>
+        <a href="./html/non-fiction.html">
+          <div class="books">
+            <img
+              src="https://m.media-amazon.com/images/I/91JT96ZnpSL.jpg"
+              alt="Turks & Caicos Islands book cover"
+            />
+            <p>Turks & Caicos Islands</p>
+          </div>
+        </a>
+        <a href="./html/non-fiction.html">
+          <div class="books">
+            <img
+              src="https://allwaysdelicious.com/wp-content/uploads/2020/05/5-ingredient-for-2-cover-1661x2048.jpg"
+              alt="5-ingredient cooking for two book cover"
+            />
+            <p>5-Ingredient Cooking for Two</p>
+          </div>
+        </a>
+        <a href="./html/non-fiction.html">
+          <div class="books">
+            <img
+              src="https://m.media-amazon.com/images/I/A1ko2SbQcUL.jpg"
+              alt="Battles that Changed History book cover"
+            />
+            <p>Battles that Changed History</p>
+          </div>
+        </a>
+      </section>
+
+      <div class="scroll-down">
+        <img
+          class="down-arrow"
+          src="./assets/images/arrow-down-icon.png"
+          alt="click to scroll down"
+        />
+      </div>
+      <section class="music">
+        <p>Some music to listen while you read</p>
+        <iframe
+          width="560"
+          height="315"
+          src="https://www.youtube.com/embed/1PHC7tirnDs"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen
+        ></iframe>
+        <iframe
+          width="560"
+          height="315"
+          src="https://www.youtube.com/embed/tUkddKz-Cys"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen
+        ></iframe>
+      </section>
+
+      <div class="social-media">
+        <a href="#">
+          <img src="./assets/images/facebook-icon.png" alt=" facebook-icon" />
+        </a>
+        <a href="#">
+          <img src="./assets/images/instagram-icon.png" alt="instagram-icon" />
+        </a>
+        <a href="#">
+          <img src="./assets/images/whatsapp-icon.png" alt="whatsapp-icon" />
+        </a>
+      </div>
     </main>
   </body>
   <footer>
-    <nav>
-      <ul>
-        <li>
-          <a href="#"> About Us </a>
-        </li>
-        <li>
-          <a href="#"> Privacy Policy </a>
-        </li>
-        <li>
-          <a href="#"> Terms </a>
-        </li>
-        <li>
-          <a href="#"> Copyright </a>
-        </li>
-        <li>
-          <a href="#"> Contact Us </a>
-        </li>
-      </ul>
-    </nav>
+    <ul>
+      <li>
+        <a href="#"> About Us </a>
+      </li>
+      <li>
+        <a href="#"> Privacy Policy </a>
+      </li>
+      <li>
+        <a href="#"> Terms </a>
+      </li>
+      <li>
+        <a href="#"> Copyright </a>
+      </li>
+      <li>
+        <a href="./html/contact.html"> Contact Us </a>
+      </li>
+    </ul>
   </footer>
 </html>

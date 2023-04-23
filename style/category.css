@@ -1,0 +1,132 @@
+/* RMIT University Vietnam
+  Course: COSC2430 Web Programming
+  Semester: 2023A
+  Assessment: Assignment 1
+  Author: Vu Minh Ha
+  ID: s3978681
+  Acknowledgement: Acknowledge the resources that you use here. */
+
+* {
+    scroll-behavior: smooth;
+}
+section {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-size: cover;
+    height: 350px;
+    position: relative;
+    margin-bottom: 100px;
+}
+section img {
+    width: 100%;
+    height: 250px;
+    border-bottom: solid black;
+}
+main {
+    margin-right: 300px;
+    /* the aside section takes up 300px on the left */
+}
+main h1 {
+    text-align: center;
+    margin-bottom: 30px;
+    background: #5dc3b4;
+    padding: 8px 0;
+    width: 350px;
+}
+.sub-category-title {
+    display: flex;
+    justify-content: center;
+}
+section div {
+    height: 300px;
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border: solid #1A1831;
+    box-shadow: 0px 5px 10px 7px #bdbcbcc4;
+    background: white;
+    margin: 20px;
+}
+.books:hover {
+    box-shadow: 0 0 0 transparent;
+}
+section div p {
+    height: 40px;
+    padding: 6px;
+    color: #20615B;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+a {
+    text-decoration: none;
+}
+#category-title {
+    margin: 20px 0 200px 0;
+    background-color: white;
+    font-size: 60px;
+    width: 100%;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+aside {
+    height: 100%;
+    position: fixed;
+    right: 50px;
+    top: 380px;
+}
+aside a {
+    color: rgb(111, 110, 110);
+}
+aside .title {
+    font-size: larger;
+    padding: 0px 0px 20px 0;
+}
+aside .selection {
+    padding: 12px 0px 12px 24px;
+}
+aside .selection:hover {
+    background-color: gainsboro;
+}
+.vertical-line {
+    height: 128px;
+    width: 2px;
+    background: rgba(185, 185, 185, 0.675);
+    rotate: 90;
+    position: absolute;
+}
+footer {
+    margin-top: 170px;
+}
+@media screen and (max-width: 1261px) {
+    /* the screen width that aside bar touches the main content */
+    aside {
+        display: none;
+    }
+    main {
+        width: 100%;
+    }
+}
+@media screen and (max-width: 960px){
+    nav ul {
+        background: #E6EFE1;
+        border: solid #8b8a8a;
+    }
+    nav ul li::after {
+        background: white;
+    }
+    section {
+        flex-direction: column;
+        flex-wrap: wrap;
+        height: auto;
+    }
+    .sub-category-title h1{
+        width: 100%;
+    }
+    section div {
+        width: 300px;
+        height: auto;
+    }
+}

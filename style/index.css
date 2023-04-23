@@ -1,40 +1,234 @@
+/* RMIT University Vietnam
+  Course: COSC2430 Web Programming
+  Semester: 2023A
+  Assessment: Assignment 1
+  Author: Vu Minh Ha
+  ID: s3978681
+  Acknowledgement: 
+https://pngimg.com/uploads/curtain/curtain_PNG54.png
+https://i.pinimg.com/originals/28/2c/cb/282ccb193f32ba1e160d0dbe68cf4106.jpg
+     */
+
+* {
+    scroll-behavior: smooth;
+}
 section {
     display: flex;
-    gap: 80px;
-    justify-content: center;
-    background: url(../assets/images/pngimg.com\ -\ curtain_PNG54.png);
+    width: 100%;
+    padding: 20px 0;
+    justify-content: space-evenly;
+    align-items: center;
     background-size: cover;
-    padding: 40px;
+    position: relative;
+    background-image: url(../assets/images/curtain.png);
+    background-color: rgba(217, 216, 216, 0.589);
+    background-blend-mode: multiply;
+    margin-bottom: 150px;
+}
+#intro-heading {
+    margin: 150px 0 70px 0;
+    font-size: 54px;
+    font-family: serif;
 }
 section img {
     width: 100%;
-    height: 240px;
-}
-h1 {
-    text-align: center;
-    margin-top: 100px;
-    margin-bottom: 20px;
-}
-section div {
-    height: 290px;
-    width: 220px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    border: solid purple;
-    box-shadow: 5px 5px 10px 5px rgb(158, 221, 179);
-    background: white;
-}
-section div p {
-    height: 40px;
-    text-align: center;
+    height: 250px;
 }
 a {
     text-decoration: none;
 }
-footer {
-    margin-top: 150px;
+main a {
+    color: #20615B;
 }
-.book1 {
-    transform: translate(0, 20px);
+main h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-weight: bolder;
+    font-size: 35px;
+}
+h1 a {
+    color: #1c534e;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+section div {
+    height: 300px;
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border: solid white 20px;
+    background: white;
+    margin: 20px;
+}
+.books:hover {
+    box-shadow: 0 5px 10px 10px rgba(184, 224, 238, 0.661);
+}
+section div p {
+    height: 40px;
+    padding: 6px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.down-arrow{
+    width: 120px;
+    animation: draggy 3s infinite ease-in-out;
+}
+.scroll-down {
+    display: flex;
+    justify-content: center;
+}
+.showcase {
+    height: 600px;
+    background: #E7EFE1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0;
+}
+.showcase img {
+    width: 40%;
+    height: initial;
+    border: white solid 20px;
+}
+.showcase .left {
+    height: 50%;
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-right: 8px;
+    background: none;
+    border: none;
+}
+.showcase .quote p:nth-child(1) {
+    font-size: 28px;
+    font-style: italic;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-align: left;
+    margin: 0 8px 20px 0;
+    height: max-content;
+}
+.showcase .quote p:nth-child(2) {
+    width: 90%;
+    text-align: right;
+    display: block;
+    font-size: 18px;
+}
+.showcase div {
+    background: none;
+    border: none;
+    width: 100%;
+    display: block;
+
+}
+.showcase button {
+    width: max-content;
+    padding: 16px 20px;
+    border-radius: 26px;
+    font-size: 16px;
+    background-image: linear-gradient(#8bb3ad,#b0dbd5)
+}
+.showcase button:hover {
+    background: aliceblue;
+    cursor: pointer;
+}
+.container-fd {
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+}
+.text-emphasize {
+    font-weight: bold;
+}
+.fun-demonstration {
+    height: 500px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+    background: #F2F2F2;
+    position: relative;
+    margin: 0;
+    padding: 0;
+}
+.fun-demonstration div {
+    background: none;
+    border: none;
+    display: block;
+    margin: 0;
+    padding: 0;
+    height: max-content;
+    width: initial;
+}
+.fun-demonstration img {
+    width: initial;
+    height: 20%;
+    /* position: absolute;
+    bottom: 0; */
+    transition: 6s;
+}
+.fun-demonstration img:hover {
+    height: 70%;
+}
+.fun-demonstration p {
+    padding: 0;
+}
+.fun-demonstration p:first-child {
+    margin-top: 30px;
+}
+.fun-demonstration .hidden {
+    display: none;
+}
+.fun-demonstration:hover .hidden{
+    display: block;
+}
+.music {
+    background: none;
+    display: block;
+    text-align: center;
+    height: max-content; 
+    /* when the second video moves to the next line, the height of this section would be adjusted accordingly */
+}
+.music p {
+    margin-bottom: 30px;
+}
+.social-media {
+    text-align: center;
+}
+.social-media img {
+    width: 40px;
+    margin: 0 10px;
+}
+@media screen and (max-width: 960px){
+    section {
+        flex-wrap: wrap;
+        height: max-content;
+    }
+}
+@keyframes draggy {
+    0% {
+        transform: translate(0,0);
+        opacity: 1;
+    }
+    25% {
+        transform: translate(0, 10px);
+        opacity: 0.5;
+    }
+    50% {
+        transform: translate(0, 0);
+        opacity: 1;
+    }
+    75% {
+        transform: translate(0, 10px);
+        opacity: 0.5;
+    }
+    100% {
+        transform: translate(0, 0);
+        opacity: 1;
+    }
 }

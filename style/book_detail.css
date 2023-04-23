@@ -1,0 +1,102 @@
+/* RMIT University Vietnam
+  Course: COSC2430 Web Programming
+  Semester: 2023A
+  Assessment: Assignment 1
+  Author: Vu Minh Ha
+  ID: s3978681
+  Acknowledgement: Acknowledge the resources that you use here. */
+
+.content img {
+    height: 476px;
+    border: solid black;
+}
+.image-supplement img{
+    height: 150px;
+}
+.content {
+    display: flex;
+    justify-content: space-around;
+}
+.image-supplement {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.price {
+    font-size: 36px;
+    font-weight: bold;
+    color: navy;
+    margin-left: 20px;
+}
+button {
+    height: 55px;
+    width: 200px;
+    text-align: center;
+    font-size: 25px;
+    border-radius: 30px;
+    background-color: rgb(238, 174, 56);
+}
+.images {
+    display: flex;
+    gap: 30px;
+}
+.image-main {
+    width: 479px;
+}
+.right-side {
+    display: flex;
+    flex-direction: column;
+    padding-top: 50px;
+    gap: 30px;
+}
+.breadcrumb {
+    padding: 30px 0 20px 135px;
+    font-size: 18px;
+}
+.description {
+    margin: 20px 140px;
+}
+main h1 {
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+.description p {
+    margin-bottom: 10px;
+}
+footer {
+    margin-top: 170px;
+}
+@media screen and (max-width: 960px){
+    nav ul {
+        background: #E6EFE1;
+        border: solid #8b8a8a;
+    }
+    nav ul li::after {
+        background: white;
+    }
+    .content {
+        flex-direction: column;
+        margin-left: 135px;
+    }
+    .images {
+        flex-direction: column;
+        width: 670px;
+    }
+    .image-main {
+        width: 100%;
+    }
+    .image-supplement {
+        width: 100%;
+        flex-direction: row;
+    }
+    .image-supplement img {
+        width: calc(100%/3 - 10px);
+    }
+    .right-side {
+        width: 670px;
+        align-items: center;
+    }
+    .description {
+        margin-top: 70px;
+    }
+}
