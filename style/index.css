@@ -204,6 +204,10 @@ section div p {
     .showcase .quote p:nth-child(1) {
         font-size: 23px;
     }
+    iframe {
+        max-width: 50%;
+        margin: 30px;
+    }
 }
 @keyframes draggy {
     0% {
