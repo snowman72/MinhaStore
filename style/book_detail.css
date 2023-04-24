@@ -6,16 +6,22 @@
   ID: s3978681
   Acknowledgement: Acknowledge the resources that you use here. */
 
+main>div {
+    margin: 0 140px;
+}
 .content img {
-    height: 476px;
     border: solid black;
 }
 .image-supplement img{
     height: 150px;
 }
+.image-supplement img:hover {
+    transform: scale(1.8);
+    box-shadow: 20px 20px 5px rgba(190, 190, 190, 0.687);
+}
 .content {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 .image-supplement {
     display: flex;
@@ -35,6 +41,10 @@ button {
     font-size: 25px;
     border-radius: 30px;
     background-color: rgb(238, 174, 56);
+    cursor: pointer;
+}
+button:hover {
+    background-color: rgba(238, 174, 56, 0.732);
 }
 .images {
     display: flex;
@@ -50,21 +60,46 @@ button {
     gap: 30px;
 }
 .breadcrumb {
-    padding: 30px 0 20px 135px;
     font-size: 18px;
+    margin-top: 30px;
+    margin-bottom: 20px;
 }
 .description {
-    margin: 20px 140px;
+    margin-top: 20px;
 }
-main h1 {
+.description h1 {
     font-size: 40px;
     margin-bottom: 20px;
+    color: #20615B;
 }
 .description p {
     margin-bottom: 10px;
 }
-footer {
-    margin-top: 170px;
+hr {
+    margin: 70px 140px;
+}
+.author img {
+    border-radius: 50%;
+    width: 158px;
+}
+.author {
+    display: flex;
+    border: solid;
+    padding: 16px;
+    background-color: #E6EFE1;
+    margin-bottom: 150px;
+}
+.author div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-left: 30px;
+}
+.author div p {
+    text-align: justify;
+}
+.author h2 {
+    color: #20615B;
 }
 @media screen and (max-width: 960px){
     nav ul {
@@ -76,7 +111,7 @@ footer {
     }
     .content {
         flex-direction: column;
-        margin-left: 135px;
+        margin-left: 30px;
     }
     .images {
         flex-direction: column;
@@ -98,5 +133,8 @@ footer {
     }
     .description {
         margin-top: 70px;
+    }
+    main>div {
+        margin: 0 30px;
     }
 }

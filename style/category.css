@@ -69,7 +69,7 @@ a {
     background-color: white;
     font-size: 60px;
     width: 100%;
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Poppins', sans-serif;
 }
 aside {
     height: 100%;
@@ -96,9 +96,6 @@ aside .selection:hover {
     background: rgba(185, 185, 185, 0.675);
     rotate: 90;
     position: absolute;
-}
-footer {
-    margin-top: 170px;
 }
 @media screen and (max-width: 1261px) {
     /* the screen width that aside bar touches the main content */
@@ -127,6 +124,5 @@ footer {
     }
     section div {
         width: 300px;
-        height: auto;
     }
 }
