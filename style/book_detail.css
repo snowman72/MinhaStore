@@ -13,7 +13,7 @@ main>div {
     border: solid black;
 }
 .image-supplement img{
-    height: 150px;
+    height: calc(479px/3 - 10px);
 }
 .image-supplement img:hover {
     transform: scale(1.8);
@@ -49,9 +49,11 @@ button:hover {
 .images {
     display: flex;
     gap: 30px;
+    height: 479px;
 }
 .image-main {
     width: 479px;
+    height: calc(479px - 2px);
 }
 .right-side {
     display: flex;
