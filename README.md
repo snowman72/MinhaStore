@@ -1,10 +1,8 @@
-# COSC2430_Assignment1
+# MinhaStore
 
- This website is created to serve the purpose of assignments.
+ This website is largely responsive for smart phone and tablet view.
 
- It is largely responsive for smart phone and tablet view.
-
-### 📚 Home page
+### 🏠 Home page
 <kbd> <img width="600" alt="Screenshot 2024-02-21 at 15 58 18" src="https://github.com/snowman72/COSC2430_Assignment1_s3978681_Vu_Minh_Ha/assets/116778424/98349660-deb6-4061-be00-2f1700060f0d">
 </kbd>
 
@@ -30,7 +28,7 @@
 
 <hr>
 
-### 📚 Responsive design
+### 📱 Responsive design
 <kbd>
 <img width="600" alt="Screenshot 2024-02-21 at 16 01 26" src="https://github.com/snowman72/COSC2430_Assignment1_s3978681_Vu_Minh_Ha/assets/116778424/686d2bc6-d5f3-44c9-ba51-f3396def3bd6">
 </kbd>
